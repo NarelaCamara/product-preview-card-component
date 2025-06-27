@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <div className="w-full  h-full">
+      <div className="bg-[#FFFFFF] w-80 p-8  rounded-lg flex flex-col items-start font-[Montserrat] ">
+        <p className="text-[#6C7289]  text-xs">PERFUME</p>
+        <h2 className="text-[#1C232B] text-4xl font-[Fraunces] font-extrabold py-6">
+          Gabrielle Essence Eau De Parfum
+        </h2>
+        <p className="text-[#6C7289] text-sm font-[Montserrat] ">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
         </p>
+        <div className=" flex flex-row py-6">
+          <h3 className="text-[#3D8168] text-4xl font-[Fraunces] font-extrabold pr-4">
+            $149.99
+          </h3>
+          <span className="text-[#6C7289] text-xs line-through font-[Montserrat]">
+            $169.99
+          </span>
+        </div>
+        <button className="bg-[#3D8168] text-white text-sm px-8 py-4 rounded-lg font-[Montserrat]">
+          Add to Cart
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
