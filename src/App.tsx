@@ -4,7 +4,7 @@ import imageDesktop from "./assets/image-product-desktop.jpg";
 function App() {
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <div className=" w-80 md:flex flex-row ">
+      <div className="w-80 md:w-[37.5rem]  md:flex flex-row ">
         <img
           src={imageMobile}
           className="rounded-t-lg md:hidden"
@@ -13,7 +13,7 @@ function App() {
 
         <img
           src={imageDesktop}
-          className="rounded-l-lg max-md:hidden"
+          className="rounded-l-lg max-md:hidden md:w-80"
           alt="image desktop"
         />
 
