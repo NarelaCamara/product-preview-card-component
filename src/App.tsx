@@ -24,7 +24,7 @@ function App() {
               $169.99
             </span>
           </div>
-          <button className="bg-[#3D8168] text-white text-sm px-8 py-4 rounded-lg font-[Montserrat]">
+          <button className="bg-[#3D8168] w-full text-white text-sm px-8 py-4 rounded-lg font-[Montserrat]">
             Add to Cart
           </button>
         </div>
