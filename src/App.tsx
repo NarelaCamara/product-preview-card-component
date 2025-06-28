@@ -4,7 +4,7 @@ import imageDesktop from "./assets/image-product-desktop.jpg";
 function App() {
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <div className=" w-60  ">
+      <div className=" w-80  ">
         <img src={imageMobile} className="rounded-t-lg" alt="image mobile" />
 
         <div className="bg-[#FFFFFF]  p-8  flex flex-col items-start font-[Montserrat] ">
