@@ -4,10 +4,20 @@ import imageDesktop from "./assets/image-product-desktop.jpg";
 function App() {
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <div className=" w-80  ">
-        <img src={imageMobile} className="rounded-t-lg" alt="image mobile" />
+      <div className=" w-80 md:flex flex-row ">
+        <img
+          src={imageMobile}
+          className="rounded-t-lg md:hidden"
+          alt="image mobile"
+        />
 
-        <div className="bg-[#FFFFFF]  p-8  flex flex-col items-start font-[Montserrat] ">
+        <img
+          src={imageDesktop}
+          className="rounded-l-lg max-md:hidden"
+          alt="image desktop"
+        />
+
+        <div className="bg-[#FFFFFF]  p-8  flex flex-col items-start font-[Montserrat] rounded-b-lg md:rounded-r-lg">
           <p className="text-[#6C7289]  text-xs">PERFUME</p>
           <h2 className="text-[#1C232B] text-4xl font-[Fraunces] font-extrabold py-6">
             Gabrielle Essence Eau De Parfum
