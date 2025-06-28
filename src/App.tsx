@@ -1,3 +1,4 @@
+import iconCart from "./assets/icon-cart.svg";
 import imageMobile from "./assets/image-product-mobile.jpg";
 import imageDesktop from "./assets/image-product-desktop.jpg";
 
@@ -18,7 +19,7 @@ function App() {
         />
 
         <div className="bg-[#FFFFFF]  p-8  flex flex-col items-start font-[Montserrat] rounded-b-lg md:rounded-r-lg">
-          <p className="text-[#6C7289]  text-xs">PERFUME</p>
+          <p className="text-[#6C7289]  text-xs tracking-[0.5rem]">PERFUME</p>
           <h2 className="text-[#1C232B] text-4xl font-[Fraunces] font-extrabold py-6">
             Gabrielle Essence Eau De Parfum
           </h2>
@@ -34,7 +35,12 @@ function App() {
               $169.99
             </span>
           </div>
-          <button className="bg-[#3D8168] w-full text-white text-sm px-8 py-4 rounded-lg font-[Montserrat]">
+          <button className="bg-[#3D8168] w-full text-white text-sm font-bold px-8 py-4 rounded-lg font-[Montserrat] flex flex-row align-middle">
+            <img
+              src={iconCart}
+              className=" h-[1.1rem]   pr-2"
+              alt="image cart"
+            />
             Add to Cart
           </button>
         </div>
